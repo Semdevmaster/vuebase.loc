@@ -39,8 +39,10 @@ _axios.interceptors.response.use(
   }
 )
 
+// @ts-ignore
 Plugin.install = function (Vue, options) {
   Vue.axios = _axios
+  // @ts-ignore
   window.axios = _axios
   Object.defineProperties(Vue.prototype, {
     axios: {
@@ -56,6 +58,7 @@ Plugin.install = function (Vue, options) {
   })
 }
 
+// @ts-ignore
 Vue.use(Plugin)
 
 export default Plugin

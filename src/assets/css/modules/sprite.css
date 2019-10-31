@@ -1,0 +1,16 @@
+.icon-cog::before {
+  mask: url(../img/sprite.svg#cog) no-repeat;
+}
+
+.icon-folder-open::before {
+  mask: url(../img/sprite.svg#folder-open) no-repeat;
+}
+
+.icon-question::before {
+  mask: url(../img/sprite.svg#question) no-repeat;
+}
+
+.icon-search::before {
+  mask: url(../img/sprite.svg#search) no-repeat;
+}
+

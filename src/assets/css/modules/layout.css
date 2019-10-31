@@ -1,0 +1,25 @@
+.container {
+  width: 100%;
+  min-width: var(--min-width-container, 320px);
+  max-width: var(--max-width-container, 1200px);
+  margin: 0 auto;
+}
+
+.full-width-outside {
+  position: relative;
+}
+
+.full-width-outside::after {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: -50vw;
+  left: -50vw;
+  display: block;
+  width: 100vw;
+  height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  content: '';
+  background-color: inherit;
+}

@@ -3,20 +3,29 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "dev": "run-p watchers serve",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "browserslist": "npx browserslist",
+    "tailwindcss": "npx tailwind build node_modules/tailwindcss/utilities.css -o src/assets/css/modules/tailwind.css --no-autoprefixer",
+    "sprite": "gulp svgicons",
+    "watchers": "gulp watchers"
   },
   "dependencies": {
     "core-js": "^3.3.5",
     "register-service-worker": "^1.6.2",
     "vue": "^2.6.10",
     "vue-router": "^3.1.3",
-    "vuex": "^3.1.1"
+    "vuex": "^3.1.1",
+    "axios": "^0.19.0",
+    "vue-meta": "^2.3.1",
+    "vuelidate": "^0.7.4"
   },
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^1.3.0",
     "@types/jest": "^24.0.21",
     "@vue/cli-plugin-babel": "^4.0.5",
     "@vue/cli-plugin-e2e-cypress": "^4.0.5",
@@ -30,13 +39,26 @@
     "@vue/eslint-config-standard": "^4.0.0",
     "@vue/eslint-config-typescript": "^4.0.0",
     "@vue/test-utils": "1.0.0-beta.29",
-    "axios": "^0.18.0",
     "eslint": "^6.6.0",
     "eslint-plugin-vue": "^5.2.3",
     "sass": "^1.23.2",
     "sass-loader": "^8.0.0",
     "typescript": "~3.6.4",
     "vue-cli-plugin-axios": "0.0.4",
-    "vue-template-compiler": "^2.6.10"
+    "vue-template-compiler": "^2.6.10",
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^6.1.1",
+    "gulp-svg-sprite": "^1.5.0",
+    "gulp-webp": "^4.0.1",
+    "imagemin-mozjpeg": "^8.0.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-csso": "^3.0.0",
+    "postcss-import": "^12.0.1",
+    "postcss-preset-env": "^6.7.0",
+    "stylelint": "^11.1.1",
+    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-no-indistinguishable-colors": "^1.2.1",
+    "stylelint-no-unsupported-browser-features": "^3.0.2",
+    "tailwindcss": "^1.1.3"
   }
 }

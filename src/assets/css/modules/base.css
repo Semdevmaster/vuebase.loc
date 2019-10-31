@@ -1,0 +1,68 @@
+/*! purgecss start ignore */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  border: 0 solid var(--gray-color-400, #808080);
+}
+
+::before,
+::after {
+  vertical-align: inherit;
+}
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  overflow-x: hidden;
+  cursor: default;
+  tab-size: 4;
+  text-rendering: optimizeLegibility;
+  text-decoration-skip: objects;
+  text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2;
+  position: relative;
+  margin: 0;
+  color: var(--black, #000);
+  background-color: var(--white, #fff);
+}
+
+a,
+area,
+button,
+input,
+label,
+select,
+summary,
+textarea,
+[tabindex] {
+  touch-action: manipulation;
+}
+
+[tabindex='-1']:focus {
+  outline: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.bg-gradient {
+  background-image: linear-gradient(60deg, hsla(0, 0%, 100%, 0.15), hsla(0, 0%, 0%, 0.1));
+}
+
+/*! purgecss end ignore */
